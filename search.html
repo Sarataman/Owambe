@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OwamBefy</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Almendra&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class=" navbar">
+        <div class="nav-link nav-brand">
+            owamBefy
+        </div>
+        <div class="nav-toggle nav-link">
+            <i class="fas fa-hamburger"></i>
+        </div>
+        <nav class="nav-item nav-right link">
+            <div class="nav-link">
+                <a href="index.html">
+                        <img src="home.svg" alt="" width="24px" height="14.38px"/>
+                    Home
+                </a>
+            </div>
+            <div class="nav-link">
+                <a href="">
+                    Sign up
+                </a>
+            </div>
+            <div class="nav-link">
+                <a href="">
+                    Login
+                </a>
+            </div>
+            <div class="nav-link">
+            <a href="">
+                Support
+            </a>
+            </div>
+            <div class="nav-link">
+                <a href="search.html">
+                    <button type="submit">
+                        Search
+                    </button>
+                </a>
+            </div>
+        </nav>
+    </header>
+        
+
+    <main id="search-main">
+        <section id="search-section">
+            <form>
+                <input type="search" id="search-input"/>
+                <button type="submit" id="search-btn">Search</button>
+            </form>
+        </section>
+        <section id="card-section">
+            <div id="event-card">
+                <div class="card" >
+                    <img src="event.svg" alt="" width="364px">
+                    <div class="event-details">
+                        <h3 class="event-title">Naming Ceremony</h3>
+                        <p>Ikeja Lagos</p>
+                        <div class="event-time">
+                            <p>21st, Dec. 2020</p>
+                            <p>Time:10:00am</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="event.svg" alt="" width="364px">
+                    <div class="event-details">
+                        <h3 class="event-title">Marriage Introduction</h3>
+                        <p>Lekki Lagos</p>
+                        <div class="event-time">
+                            <p>22st, Nov. 2020</p>
+                            <p>Time:10:00am</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="event.svg" alt="" width="364px">
+                    <div class="event-details">
+                        <h3 class="event-title">House Opening</h3>
+                        <p>Surulere Lagos</p>
+                        <div class="event-time">
+                            <p>19th, July. 2020</p>
+                            <p>Time:10:00am</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="top">
+            <div class="footer-top">
+                <div class="footer-info">
+                    <p>5, Ikeja G.R.A, off Illupeju Road,  <br/>
+                        Mainland Lagos State. <br/>
+                        Nigeria</p>
+                </div>
+                <div class="footer-info">
+                    <p>081234457638, <br/><br/>info@owambefy.com</p>
+                </div>
+                <div class="footer-info">
+                    <div class="download">
+                        <div class="icon">
+                            <img src="apple.svg" alt="" width="35px" height="42px">
+                        </div>
+                        <div>
+                            <p>Download on the <br/>
+                            <span>Apple Store</span></p>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="download">
+                        <div class="icon">
+                            <img src="play.svg" alt="" width="35px" height="42px">
+                        </div> 
+                        <div>
+                            <p>Download on the <br/>
+                            <span>Google Play</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-info">
+                    <p>Contacts <br/><br/> FAQs <br/><br/> Services</p>
+                </div>
+                <div class="footer-info">
+                    <p>Owambe Location <br/><br/> Ikeja <br/><br/> Island <br/><br/> Click to see more.......</p>
+                </div>
+            </div>
+        </section>
+        <section class="bottom">
+            <div class="footer-bottom">
+                <div>
+                        <!--<img src="copyright.svg" alt="" width="17px" height="17px">-->
+                    <p>2020 Owambefy. All Rights Reserved</p>
+                </div>
+                <div>
+                    <img class="icon" src="twitter.svg" alt="" width="20px" height="24px">
+                    <img class="icon" src="instagram.svg" alt="" width="18px" height="24px">
+                    <img src="facebook.svg" alt width="10px" height="24px">
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
+    <script>
+        function navToggle() {
+            const navs =  document.querySelectorAll('.nav-item')
+            navs.forEach(nav => nav.classList.toggle('toggle_Show'));
+        }
+        document.querySelector('.nav-toggle').addEventListener('click', navToggle);
+    </script>
+
+</body>
+</html>
