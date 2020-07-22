@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Almendra&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
@@ -67,8 +69,8 @@
             <div id="event-card">
                 <div class="card" >
                     <img src="event.svg" alt="" width="364px">
-                    <div class="event-details">
-                        <h3 class="event-title">Naming Ceremony</h3>
+                    <div class="event-details titles">
+                        <h3 class="event-title ">Naming Ceremony</h3>
                         <p>Ikeja Lagos</p>
                         <div class="event-time">
                             <p>21st, Dec. 2020</p>
@@ -164,6 +166,11 @@
             navs.forEach(nav => nav.classList.toggle('toggle_Show'));
         }
         document.querySelector('.nav-toggle').addEventListener('click', navToggle);
+
+        const test = document.querySelector(".titles");
+        test.style.fontFamily = "'Roboto', sans-serif";
+
+
     </script>
 
 </body>
