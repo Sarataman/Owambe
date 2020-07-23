@@ -80,7 +80,7 @@
                 </div>
                 <div class="card">
                     <img src="event.svg" alt="" width="364px">
-                    <div class="event-details">
+                    <div class="event-details titles">
                         <h3 class="event-title">Marriage Introduction</h3>
                         <p>Lekki Lagos</p>
                         <div class="event-time">
@@ -91,7 +91,7 @@
                 </div>
                 <div class="card">
                     <img src="event.svg" alt="" width="364px">
-                    <div class="event-details">
+                    <div class="event-details titles">
                         <h3 class="event-title">House Opening</h3>
                         <p>Surulere Lagos</p>
                         <div class="event-time">
@@ -167,8 +167,8 @@
         }
         document.querySelector('.nav-toggle').addEventListener('click', navToggle);
 
-        const test = document.querySelector(".titles");
-        test.style.fontFamily = "'Roboto', sans-serif";
+        const tests = document.querySelectorAll(".titles");
+        tests.forEach((test) => test.style.fontFamily = "'Roboto', sans-serif");
 
 
     </script>
