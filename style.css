@@ -10,7 +10,7 @@ body {
     padding: 0;
 }
 
-/*Nav style*/
+/*Nav*/
 .navbar {
     display: flex;
     padding: 1.8rem;
@@ -97,6 +97,7 @@ button {
     cursor: pointer;
 }
 
+/*Footer*/
 footer {
     display: flex;
     flex-direction: column;
@@ -186,7 +187,7 @@ span {
     font-weight: bold;
 }
 
-
+/*Search page*/
 #search-input {
     border-radius: 20px;
     border: 1px solid white;
