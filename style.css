@@ -246,7 +246,7 @@ img {
 }
 
 #search-section {
-    background: url(bg-search.png);
+    background: url(images/bg-search.png);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
